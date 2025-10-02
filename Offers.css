@@ -1,0 +1,88 @@
+.Offers {
+  background-image: url("Images/CoffeeBean.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: .5px solid black;
+  box-shadow: 1px 2px 11px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 2px 11px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 2px 11px 0px rgba(0,0,0,0.75);
+
+  width: 100%;
+  height: auto;            
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+  
+}
+
+
+
+.Offers-Text {
+  text-align: left;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+#Offers {
+  color: white;
+  font-size: clamp(2rem, 10vw, 5rem);
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Offers-Grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(2vw, 5vw, 5vw);
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.Offer {
+  flex: 1 1 200px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.Offer > div {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border: 5px solid white;
+}
+
+.Offer-label {
+  margin-top: 10px;
+  color: white;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  text-align: center;
+  font-family: Imprima;
+}
+
+
+.Offer-img1 { border-radius: 69% 31% 79% 21% / 21% 56% 44% 79%; }
+.Offer-img2 { border-radius: 43% 57% 32% 68% / 55% 29% 71% 45%; }
+.Offer-img3 { border-radius: 60% 40% 30% 70% / 40% 70% 30% 60%; }
+.Offer-img4 { border-radius: 77% 23% 55% 45% / 38% 62% 58% 42%; }
+
+.Offers-Grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit; 
+  display: block;
+  transition: transform .5s ease;
+}
+
+.Offers-Grid img:hover {
+  transform: scale(1.2);
+  
+}
+
+

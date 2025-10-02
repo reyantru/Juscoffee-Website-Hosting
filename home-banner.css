@@ -1,0 +1,47 @@
+.HomeBanner {
+  background-image: url("Images/HomeBanner.png");
+  background-size: cover;
+  background-position: center; 
+  width: 100%;
+
+   min-height: clamp(150px, 40vw, 400px); 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  padding-top: 6vw;
+  padding-bottom: 6vw;
+
+  border: 0.5px solid black;
+  box-shadow: 1px 2px 11px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 2px 11px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 2px 11px 0px rgba(0,0,0,0.75);
+}
+
+.Text-Container{
+    color: white;
+}
+
+
+#relax, #just-because{
+    margin: 0;
+    font-family: "Imprima";
+    opacity: 0;
+    animation: fadeInText 1.5s ease forwards;
+}
+
+
+#relax{
+    font-size: clamp(5vw, 10.359vw, 10.359vw);
+    animation-delay: 0.3s;
+}
+#just-because{
+    font-size: 4.919vw;
+    animation-delay: 1.2s;
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+  }
+}

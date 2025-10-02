@@ -1,0 +1,231 @@
+.Footer{
+    background-color: #849573;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.Footer-Logo-Img {
+    max-width: 200px;
+    height: auto;
+    width: 100%;
+}
+
+.Footer-Content {
+    display: flex;
+    flex-wrap: wrap;       
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2% 5%;
+    gap: 20px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+.Left-Footer{
+    flex: 1 1 200px;
+    display: flex;
+}
+
+.Map-Embed {
+  width: clamp(250px, 10vw, 300px); 
+  height: auto;                    
+  overflow: hidden;
+  border: 2px solid #6C7E5A;     
+  border-radius: 15px;
+}
+
+.Map-Embed img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+  transform-origin: center center; 
+}
+
+.Map-Embed img:hover {
+  transform: scale(3);  
+}
+
+.Map-Title{
+    font-size: clamp(14px, 2vw, 18px);
+    letter-spacing: 0.3em;
+    font-family: 'Imprima';
+}
+
+.Left-Footer > div p, div h3 {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.Address-Contacts{
+    margin-top: 40px;
+    margin-left: 10px;
+    text-align: left;
+    font-family: 'Imprima';
+}
+
+.Contacts{
+    margin-top: 6px;
+    font-size: clamp(12px, 1.2vw, 15px);
+}
+.Contacts i{
+    margin-right: 10px;
+}
+
+.Left-Footer > .Address-Contacts h3 {
+    margin: 0;
+    font-size: clamp(14px, 1.5vw, 16px);
+    font-family: 'Instrument Sans', sans-serif;
+}
+/*-----------------------------------------------------------------------------------------*/
+.Middle-Footer{
+    flex: 1 1 200px;
+}
+.Middle-Footer .Footer-Text p {
+    margin: 0;
+    margin-top: 50px;
+    font-size: clamp(12px, 1.5vw, 14px);
+    font-family: 'Roboto', sans-serif;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+.Right-Footer{
+    display: flex;
+    flex: 1 1 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Footer-nav-bar{
+    flex: 1 1 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: solid 1px white;
+    padding: 10px;
+}
+
+.Footer-nav-bar ul {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  list-style-type: none;
+}
+
+.Footer-nav-bar ul li {
+  width: 100%;
+}
+
+.Footer-nav-bar ul li a {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  font-family: "Instrument Sans";
+  font-size: clamp(10px, 1.2vw, 12px);
+  letter-spacing: 6px;
+  box-sizing: border-box;
+  transition: color 0.2s ease, background 0.15s ease;
+}
+
+
+#FooterActive, #FooterActiveLink {
+    background-color: #6C7E5A;
+    color: white    
+}
+#NavLink{
+    transition: background-color 0.3s ease;
+}
+
+#NavLink:hover {
+    background-color: #6C7E5A;
+}
+
+.Socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    flex: 1 1 150px;
+    border-left: solid 1px white;
+    padding: 10px;
+}
+.Social-Icons {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;   
+    font-size: clamp(16px, 2vw, 20px);    
+    color: white;
+}
+
+.Social-Icons i:hover{
+    cursor: pointer;
+    color: #6C7E5A;
+    transition: color 0.15s ease;
+}
+
+@media (max-width: 768px) {
+  .Footer-Content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .Left-Footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Address-Contacts {
+    margin-top: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .Right-Footer {
+    flex-direction: column;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    gap: 20px;
+  }
+
+  .Footer-nav-bar {
+    border-left: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .Footer-nav-bar ul {
+    flex-direction: row;       
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .Socials {
+    border-left: none;
+    padding-left: 0;
+    flex-direction: row;       
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .Social-Icons {
+    flex-direction: row;
+    gap: 20px;
+  }
+}

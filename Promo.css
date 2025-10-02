@@ -1,0 +1,102 @@
+.Promo {
+    background-image: url("Images/PromoBG.png");
+    background-size: cover;
+    padding: 40px 6vw;
+    margin-bottom: 5vw;
+}
+
+
+.Promo-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    gap: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden; 
+}
+
+
+.Promo-Image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: clamp(200px, 50vh, 500px); 
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 6px;
+    border: clamp(5px, 2vw, 15px) white dotted;
+}
+
+
+
+.Promo-Image img {
+    width: 95%;
+    height: 95%;
+    border-radius: 12px;
+    object-fit: cover; 
+    object-position: center; 
+    transition: transform 0.3s ease;
+    transform: scale(1.05); 
+}
+
+
+.Promo-Descriptions {
+    flex: 1;
+    max-width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    margin-left: 3vw;
+    text-align: left;
+}
+
+
+.Promo-Title p {
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
+    font-family: 'Cormorant', serif;
+    color: white;
+    margin: 0;
+}
+
+#Holiday {
+    font-size: clamp(3rem, 8.5vw, 5.5rem);
+    font-family: 'Cormorant', serif;
+    line-height: 1.1;
+}
+
+#Latte {
+    font-size: clamp(3rem, 8.5vw, 5.5rem);
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.1;
+}
+
+#Special {
+    font-size: clamp(3rem, 8.5vw, 5.5rem);
+    font-family: 'Petit Formal Script', cursive;
+    line-height: 1.1;
+}
+
+.LastMin {
+    font-size: clamp(1.1rem, 2.3vw, 1.6rem);
+    font-family: 'Cormorant', serif;
+    line-height: 2.5rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    display: inline-block;
+    padding: 0 8px;
+    margin: 1rem 0;
+}
+
+.PromoInfo p {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-family: 'Space Mono', monospace;
+    line-height: 1.6rem;
+}
